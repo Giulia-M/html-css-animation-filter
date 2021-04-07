@@ -184,3 +184,77 @@
     width: 60px;
     height: 20px;
 }
+
+/* esercizio 13 */
+.well {
+    overflow: hidden;
+}
+.ex-13-button:hover .ex-13-top-white {
+    animation: giroCompletoTop 2s linear;
+}
+
+@keyframes giroCompletoTop {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    /* verso destra */
+    20% {
+        left: 100%;
+        top: -10px;
+    }
+    /* verso il basso */
+    40% {
+        left: 100%;
+        top: 60px;
+    }
+    /* verso sinistra */
+    70% {
+        left: -60px;
+        top: 60px;
+    }
+    /* verso l'alto */
+    90% {
+        left: -60px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: giroCompletoBottom 2s linear;
+}
+
+@keyframes giroCompletoBottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    /* verso sinistra */
+    20% {
+        bottom: -10px;
+        right: 100%;
+    }
+    /* verso l'alto */
+    40% {
+        bottom: 60px;
+        right: 100%;
+    }
+    /* verso destra */
+    70% {
+        bottom: 60px;
+        right: -60px;
+    }
+    /* verso il basso */
+    90% {
+        bottom: -10px;
+        right: -60px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
