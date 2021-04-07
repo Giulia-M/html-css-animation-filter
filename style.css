@@ -70,10 +70,28 @@
     filter:grayscale(1) sepia(50%);
 }
 
+/* esercizio 8 */
+.ex-8-img {
+    transition: 2s;
+}
+.ex-8-img:hover {
+    filter: grayscale(.5) sepia(40%);
+    border-radius: 20px;
+}
+
+/* esercizio 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+.ex-9-img:hover {
+    filter: grayscale(.5) sepia(40%);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+
 .ex-10-icon {
     font-size: 60px;
 }
