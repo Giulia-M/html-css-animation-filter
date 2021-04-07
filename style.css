@@ -103,8 +103,57 @@
 }
 
 /* esercizio 11 */
+.ex-11-icon:hover {
+    animation: rotazioneOraria 2s linear;
+}
+@keyframes rotazioneOraria {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 .ex-11-icon {
     font-size: 60px;
+}
+
+/* esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: animationSpazioTop 2s linear;
+}
+@keyframes animationSpazioTop {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    50% {
+        left: 65%;
+    }
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: animationSpazioBottom 2s linear;
+}
+
+@keyframes animationSpazioBottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    50% {
+        right: 65%;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
